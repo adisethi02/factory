@@ -81,7 +81,7 @@ An **Abstract Factory** provides an interface for creating families of related o
 | **Flexibility** | Low (modifications require changes in factory class) | Medium (new factories can be added easily) | High (supports product families) |
 | **Complexity** | Simple | Moderate | High |
 | **Use Case** | When object creation logic needs to be centralized | When object creation should be delegated to subclasses | When multiple related objects need to be created together |
-| **Example Scenario** | A factory that creates vehicles based on input | Different factories for each vehicle type | A factory that creates electric or gasoline vehicles |
+| **Example Scenario** | A factory that creates vehicles based on input | Different factories for each vehicle type | A factory that creates electric or Petrol vehicles |
 
 ---
 ## Conclusion

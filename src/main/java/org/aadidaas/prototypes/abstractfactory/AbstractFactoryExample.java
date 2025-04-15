@@ -32,22 +32,22 @@ class ElectricPlane implements IPlane {
     }
 }
 
-// Concrete Products for Gasoline Vehicles
-class GasolineCar implements ICar {
+// Concrete Products for Petrol Vehicles
+class PetrolCar implements ICar {
     public void run() {
-        System.out.println("Gasoline Car is running with a roaring engine.");
+        System.out.println("Petrol Car is running with a roaring engine.");
     }
 }
 
-class GasolineBike implements IBike {
+class PetrolBike implements IBike {
     public void run() {
-        System.out.println("Gasoline Bike is running with a loud exhaust.");
+        System.out.println("Petrol Bike is running with a loud exhaust.");
     }
 }
 
-class GasolinePlane implements IPlane {
+class PetrolPlane implements IPlane {
     public void run() {
-        System.out.println("Gasoline Plane is flying using jet fuel.");
+        System.out.println("Petrol Plane is flying using jet fuel.");
     }
 }
 
@@ -75,18 +75,18 @@ class ElectricVehicleFactory implements VehicleFactory {
     }
 }
 
-// Concrete Factory for Gasoline Vehicles
-class GasolineVehicleFactory implements VehicleFactory {
+// Concrete Factory for Petrol Vehicles
+class PetrolVehicleFactory implements VehicleFactory {
     public ICar createCar() {
-        return new GasolineCar();
+        return new PetrolCar();
     }
 
     public IBike createBike() {
-        return new GasolineBike();
+        return new PetrolBike();
     }
 
     public IPlane createPlane() {
-        return new GasolinePlane();
+        return new PetrolPlane();
     }
 }
 
@@ -97,8 +97,8 @@ public class AbstractFactoryExample {
         ICar electricCar = electricFactory.createCar();
         electricCar.run(); // Output: Electric Car is running silently.
 
-        IBike gasolineBike = new GasolineVehicleFactory().createBike();
-        gasolineBike.run(); // Output: Gasoline Bike is running with a loud exhaust.
+        IBike PetrolBike = new PetrolVehicleFactory().createBike();
+        PetrolBike.run(); // Output: Petrol Bike is running with a loud exhaust.
     }
 }
 
